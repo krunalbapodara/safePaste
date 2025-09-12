@@ -1,0 +1,15 @@
+{
+  "name": "safepaste",
+  "version": "1.0.0",
+  "main": "background.js",
+  "scripts": {
+    "build": "npx vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^7.0.5"
+  }
+}
