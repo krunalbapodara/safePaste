@@ -1,4 +1,3 @@
-import { getActiveDomains } from "./matcher";
 import {
   setupPasteInterceptor,
   setupEnterInterceptor,
@@ -6,10 +5,8 @@ import {
 } from './interceptors';
 
 (async () => {
-  const activeDomains = await getActiveDomains();
-  if (activeDomains.includes(window.location.hostname)) {
-    setupPasteInterceptor();
-    setupEnterInterceptor();
-    setupClickInterceptor();
-  }
+  // Add logic here to only execute these on specific domain only.
+  setupPasteInterceptor();
+  setupEnterInterceptor();
+  setupClickInterceptor();
 })();
