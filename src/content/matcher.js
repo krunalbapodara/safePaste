@@ -1,22 +1,13 @@
 import { getFromStorage } from "./storage";
 
-const defaultDomains = [
-  "chatgpt.com",
-  "chat.openai.com",
-  "bard.google.com",
-  "gemini.google.com",
-  "phind.com",
-  "bing.com"
-];
+const defaultDomains = ['safepaste-game-flo.vercel.app'];
 
 const defaultPatterns = {
-  "keywords": ["api_key", "auth_token", "secret"],
-  "regex": [
-    "AKIA[0-9A-Z]{16}",
-  ],
-  "urls": ["https://api.myservice.com", "https://secure.example.com"],
-  "vars": ["DB_PASSWORD", "JWT_SECRET", "API_TOKEN"],
-  "configKeys": ["DATABASE_URL", "NEXTAUTH_SECRET"]
+  "keywords": [],
+  "regex": [],
+  "urls": [],
+  "vars": [],
+  "configKeys": []
 };
 
 /**
