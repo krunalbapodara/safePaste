@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((e,t,p)=>{e.type==="SHOW_POPUP"&&chrome.windows.create({url:chrome.runtime.getURL("popup.html"),type:"popup",width:400,height:300}),e.type==="PASTE_ALLOW"&&chrome.tabs.sendMessage(t.tab.id,{type:"PASTE_ALLOW"}),e.type==="PASTE_REDACT"&&chrome.tabs.sendMessage(t.tab.id,{type:"PASTE_REDACT"})});
